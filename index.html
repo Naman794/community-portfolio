@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" class="dark">
 <head>
@@ -6,23 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Naman Sinha</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
   <style>
     body {
       font-family: 'Inter', sans-serif;
     }
   </style>
 </head>
-<body class="bg-gray-900 text-white">
-  <header class="p-6 border-b border-gray-700 flex justify-between items-center">
-    <h1 class="text-3xl font-bold">Naman Sinha</h1>
-  </header>
+<body class="bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-white min-h-screen">
 
+  <!-- Hero Section -->
+  <section class="py-16 px-6">
+    <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+
+      <!-- Text Content -->
+      <div class="max-w-xl text-center md:text-left">
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-3">
+          Hi I am <span class="text-blue-500">Naman</span> Sinha
+        </h1>
+        <h2 class="text-xl font-medium text-gray-300 mb-4">Community Manager</h2>
+        <p class="text-gray-400 leading-relaxed mb-6">
+          I’m a Community Manager with experience in startups, Web3, and gaming. I build communities that grow, engage, and thrive.
+        </p>
+        <div class="flex gap-4 justify-center md:justify-start">
+          <a href="#about" class="bg-blue-500 hover:bg-blue-600 text-white font-medium px-6 py-2 rounded-full shadow">
+            More About Me
+          </a>
+          <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" class="text-blue-400 hover:text-blue-300">
+            <i data-lucide="linkedin" class="w-6 h-6"></i>
+          </a>
+          <a href="https://github.com/your-github" target="_blank" class="text-blue-400 hover:text-blue-300">
+            <i data-lucide="github" class="w-6 h-6"></i>
+          </a>
+          <a href="https://twitter.com/your-twitter" target="_blank" class="text-blue-400 hover:text-blue-300">
+            <i data-lucide="twitter" class="w-6 h-6"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Profile Image -->
+      <div class="relative">
+        <img src="avatar.jpeg" alt="Naman Sinha" class="rounded-xl shadow-lg max-w-xs mx-auto" />
+        <div class="absolute top-4 left-0 bg-blue-500 text-white px-3 py-1 text-sm font-semibold rounded-r-lg transform -rotate-12 shadow-lg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
   <main class="max-w-5xl mx-auto px-6 py-10 space-y-20">
-    <!-- About Me -->
     <section id="about">
       <h2 class="text-4xl font-semibold mb-6">About Me</h2>
       <div class="flex flex-col md:flex-row items-center gap-6">
-        <img src="avatar.jpeg" alt="Profile" class="w-40 h-40 rounded-full border-4 border-blue-500" />
         <p class="text-lg">
           I’m a Community Manager with experience in startups, Web3, and gaming. I build communities that grow, engage, and thrive.
         </p>
@@ -47,55 +81,181 @@
       </div>
     </section>
 
-    <!-- Projects -->
-    <section id="projects">
-      <h2 class="text-4xl font-semibold mb-6">Projects</h2>
-      <div class="space-y-6">
-        <div class="bg-gray-800 p-4 rounded-lg flex gap-4 items-center">
-          <img src="web3dao.png" alt="Web3 DAO" class="w-12 h-12" />
-          <div>
-            <h3 class="text-xl font-semibold text-blue-400">Web3 Gaming DAO</h3>
-            <p>Increased community engagement by 60%, with 40% more active users through campaigns.</p>
+    <!-- What I Do -->
+     <section id="projects" class="py-16 px-6 bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-white">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-4xl font-semibold mb-2">What I Do</h2>
+        <div class="w-24 h-1 bg-blue-500 mx-auto mb-10 rounded-full"></div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Project Card 1 -->
+          <div class="bg-[#1e3a8a]/20 hover:bg-[#1e3a8a]/30 transition p-6 rounded-lg shadow-md">
+            <div class="flex justify-center mb-4">
+              <img src="parallel.png" alt="Parallel TCG" class="w-10 h-10" />
+            </div>
+            <h3 class="text-xl font-semibold text-blue-400 mb-2">Parallel India</h3>
+            <p class="text-gray-300 text-sm">I worked closely to boost awareness and build a strong community across India. Through targeted campaigns and creator collaborations, we successfully expanded their user base and regional footprint.</p>
           </div>
-        </div>
-        <div class="bg-gray-800 p-4 rounded-lg flex gap-4 items-center">
-          <img src="startup.png" alt="Startup" class="w-12 h-12" />
-          <div>
-            <h3 class="text-xl font-semibold text-blue-400">Startup Incubator</h3>
-            <p>Tripled Discord participation by organizing creator-driven AMAs.</p>
+
+          <!-- Project Card 2 -->
+          <div class="bg-[#1e3a8a]/20 hover:bg-[#1e3a8a]/30 transition p-6 rounded-lg shadow-md">
+            <div class="flex justify-center mb-4">
+              <img src="discord_.png" alt="Parallel TCG" class="w-10 h-10" />
+            </div>
+            <h3 class="text-xl font-semibold text-blue-400 mb-2">Community Growth</h3>
+            <p class="text-gray-300 text-sm">Led community expansion, dramatically increasing Rooter's Discord server membership from 20k to 120k+ and securing official verification, marking a substantial milestone in community growth.</p>
           </div>
-        </div>
-        <div class="bg-gray-800 p-4 rounded-lg flex gap-4 items-center">
-          <img src="esports.png" alt="Esports" class="w-12 h-12" />
-          <div>
-            <h3 class="text-xl font-semibold text-blue-400">Esports Community Hub</h3>
-            <p>Established partnerships with 30+ creators and drove 300% growth in events.</p>
+
+          <!-- Project Card 3 -->
+          <div class="bg-[#1e3a8a]/20 hover:bg-[#1e3a8a]/30 transition p-6 rounded-lg shadow-md">
+            <div class="flex justify-center mb-4">
+              <img src="esports.png" alt="Parallel TCG" class="w-20 h-20" />
+            </div>
+            <h3 class="text-xl font-semibold text-blue-400 mb-2">Esports Community Hub</h3>
+            <p class="text-gray-300 text-sm">Built the Esports Community Hub by partnering with 30+ creators and multiple brands, driving event growth and introducing Rooter Pro to promote competitive-only lobbies for enhanced player performance.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Certifications -->
-    <section id="certifications">
-      <h2 class="text-4xl font-semibold mb-6">Certifications</h2>
-      <ul class="space-y-4">
-        <li class="bg-gray-800 p-4 rounded">
-          <p class="font-semibold text-blue-300">Community Management</p>
-          <p class="text-gray-400 text-sm">CMX Academy — Jan 2024</p>
-        </li>
-        <li class="bg-gray-800 p-4 rounded">
-          <p class="font-semibold text-blue-300">Social Media Strategy</p>
-          <p class="text-gray-400 text-sm">HubSpot — May 2023</p>
-        </li>
-      </ul>
+
+    <!-- Projects -->
+    <section id="projects" class="py-16 px-6 bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-white">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-4xl font-semibold mb-2">Projects</h2>
+        <div class="w-24 h-1 bg-blue-500 mx-auto mb-10 rounded-full"></div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Project Card 1 -->
+          <div class="bg-[#1e3a8a]/20 hover:bg-[#1e3a8a]/30 transition p-6 rounded-lg shadow-md">
+            
+            <h3 class="text-xl font-semibold text-blue-400 mb-2">
+              <a href="https://github.com/Naman794/stock_ml_tester" target="_blank" class="hover:underline">
+                Stock ML Tester
+              </a>
+            </h3>
+            <p class="text-gray-300 text-sm">
+              Stock ML Tester is a Python-based tool for analyzing stock and commodity data using machine learning models. It includes data loading, analysis, prediction, and scheduled task execution.
+            </p>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div class="bg-[#1e3a8a]/20 hover:bg-[#1e3a8a]/30 transition p-6 rounded-lg shadow-md">
+            
+            <h3 class="text-xl font-semibold text-blue-400 mb-2">
+              <a href="https://github.com/Naman794/Machine-Learning-based-Face-attendance" target="_blank" class="hover:underline">
+                Machine Learning-based Face Attendance System
+              </a>
+            </h3>
+            <p class="text-gray-300 text-sm">
+              This project implements an automated attendance system using facial recognition technology. The system is designed to detect faces from a camera feed, identify individuals against a database of registered users, and mark their attendance accordingly. This aims to provide a more efficient, accurate, and contactless method for recording attendance.
+            </p>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div class="bg-[#1e3a8a]/20 hover:bg-[#1e3a8a]/30 transition p-6 rounded-lg shadow-md">
+            
+            <h3 class="text-xl font-semibold text-blue-400 mb-2">
+              <a href="https://github.com/Naman794/DataViz-Dash" target="_blank" class="hover:underline">
+                DataViz Dash
+              </a>
+            </h3>
+            <p class="text-gray-300 text-sm">
+              DataViz Dash is a unique integration between a web application for data visualization and a Discord bot, designed to streamline data interaction and visualization directly within Discord and on a dedicated web platform. This project allows users to upload and visualize Excel data through interactive charts and graphs, with additional functionalities provided through a Discord interface for user verification and data interaction.
+            </p>
+          </div>
+
+          <!-- Project Card 4 -->
+          <div class="bg-[#1e3a8a]/20 hover:bg-[#1e3a8a]/30 transition p-6 rounded-lg shadow-md">
+            
+            <h3 class="text-xl font-semibold text-blue-400 mb-2">
+              <a href="https://github.com/Naman794/HawkPlay11" target="_blank" class="hover:underline">
+                HawkPlay11
+              </a>
+            </h3>
+            <p class="text-gray-300 text-sm">
+              HawkPlay is a web platform that provides real-time IPL scores and fantasy points statistics from multiple fantasy sports apps, including Dream11, Vision11, and others.
+            </p>
+          </div>
+
+        </div>
+      </div>
     </section>
 
-    <!-- Testimonials -->
+
+
+    <!-- Certifications -->
+    <section id="certifications" class="py-16 px-6 bg-[#0f172a] text-white">
+      <h2 class="text-4xl font-semibold mb-6">Certifications</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        
+        <div class="bg-gray-800 p-4 rounded">
+          <p class="font-semibold text-blue-300">
+            <a href="https://www.coursera.org/account/accomplishments/certificate/X9VF37GMKLXQ" target="_blank" class="hover:underline">
+              Introduction to Generative AI
+            </a>
+          </p>
+          <p class="text-gray-400 text-sm">Google Cloud — June 5, 2024</p>
+        </div>
+
+        <div class="bg-gray-800 p-4 rounded">
+          <p class="font-semibold text-blue-300">
+            <a href="https://coursera.org/share/f9fce030dc656af44f4b84983e8b158c" target="_blank" class="hover:underline">
+              Foundations: Data, Data, Everywhere
+            </a>
+          </p>
+          <p class="text-gray-400 text-sm">Google — May 21, 2024</p>
+        </div>
+
+        <div class="bg-gray-800 p-4 rounded">
+          <p class="font-semibold text-blue-300">
+            <a href="https://learn.google.com/digitalgarage/course/digital-marketing" target="_blank" class="hover:underline">
+              Fundamentals of Digital Marketing
+            </a>
+          </p>
+          <p class="text-gray-400 text-sm">Google Digital Garage — Mar 2023</p>
+        </div>
+
+        <div class="bg-gray-800 p-4 rounded">
+          <p class="font-semibold text-blue-300">
+            <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Accenture%20North%20America/hzmoNKtzvAzXsEqx8_Accenture%20North%20America_wa7YPrbCJZKLkXKzb_1713610001567_completion_certificate.pdf" target="_blank" class="hover:underline">
+              Data Analytics and Visualization Job Simulation
+            </a>
+          </p>
+          <p class="text-gray-400 text-sm">Accenture — April 20, 2024</p>
+        </div>
+
+        <div class="bg-gray-800 p-4 rounded">
+          <p class="font-semibold text-blue-300">
+            <a href="https://www.hackerrank.com/certificates/265c935fa91f" target="_blank" class="hover:underline">
+              SQL (Intermediate)
+            </a>
+          </p>
+          <p class="text-gray-400 text-sm">HackerRank — Nov 5, 2023</p>
+        </div>
+
+        <div class="bg-gray-800 p-4 rounded">
+          <p class="font-semibold text-blue-300">
+            <a href="https://www.hackerrank.com/certificates/39630e08b459" target="_blank" class="hover:underline">
+              Python
+            </a>
+          </p>
+          <p class="text-gray-400 text-sm">HackerRank — May 24, 2022</p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- 
+    
     <section id="testimonials">
       <h2 class="text-4xl font-semibold mb-6">Testimonials</h2>
       <blockquote class="border-l-4 border-blue-500 pl-4 italic text-gray-300">“An absolute professional—brought clarity, structure, and energy to our community.”</blockquote>
       <blockquote class="border-l-4 border-purple-500 pl-4 italic text-gray-300 mt-4">“One of the best community builders I’ve worked with.”</blockquote>
     </section>
+    -->
 
     <!-- Contact -->
     <section id="contact">
@@ -116,10 +276,15 @@
         </div>
       </div>
     </section>
+    -->
   </main>
 
   <footer class="text-center text-sm p-6 border-t border-gray-700 mt-12 text-gray-500">
     © 2025 Naman Sinha
   </footer>
+
+  <script>
+  lucide.createIcons();
+</script>
 </body>
 </html>
