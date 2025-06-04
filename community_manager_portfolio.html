@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Community Manager Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white">
+  <header class="p-6 border-b border-gray-700 flex justify-between items-center">
+    <h1 class="text-3xl font-bold">Community Manager Portfolio</h1>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 py-10 space-y-20">
+    <!-- About Me -->
+    <section id="about">
+      <h2 class="text-4xl font-semibold mb-6">About Me</h2>
+      <div class="flex flex-col md:flex-row items-center gap-6">
+        <img src="avatar.jpg" alt="Profile" class="w-28 h-28 rounded-full border-4 border-blue-500" />
+        <p class="text-lg">
+          I’m a Community Manager with experience in startups, Web3, and gaming. I build communities that grow, engage, and thrive.
+        </p>
+      </div>
+      <ul class="list-disc list-inside mt-4 space-y-1 text-md">
+        <li>Building strong digital communities</li>
+        <li>Fostering creator partnerships</li>
+        <li>Strategizing long-term growth</li>
+      </ul>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2 class="text-4xl font-semibold mb-6">Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="bg-gray-800 p-4 rounded text-center text-blue-300 font-medium">Community Engagement</div>
+        <div class="bg-gray-800 p-4 rounded text-center text-blue-300 font-medium">Social Media Strategy</div>
+        <div class="bg-gray-800 p-4 rounded text-center text-blue-300 font-medium">Event Hosting</div>
+        <div class="bg-gray-800 p-4 rounded text-center text-blue-300 font-medium">Discord/Telegram Management</div>
+        <div class="bg-gray-800 p-4 rounded text-center text-blue-300 font-medium">Influencer Partnerships</div>
+        <div class="bg-gray-800 p-4 rounded text-center text-blue-300 font-medium">Content Planning & Analytics</div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2 class="text-4xl font-semibold mb-6">Projects</h2>
+      <div class="space-y-6">
+        <div class="bg-gray-800 p-4 rounded-lg flex gap-4 items-center">
+          <img src="web3dao.png" alt="Web3 DAO" class="w-12 h-12" />
+          <div>
+            <h3 class="text-xl font-semibold text-blue-400">Web3 Gaming DAO</h3>
+            <p>Increased community engagement by 60%, with 40% more active users through campaigns.</p>
+          </div>
+        </div>
+        <div class="bg-gray-800 p-4 rounded-lg flex gap-4 items-center">
+          <img src="startup.png" alt="Startup" class="w-12 h-12" />
+          <div>
+            <h3 class="text-xl font-semibold text-blue-400">Startup Incubator</h3>
+            <p>Tripled Discord participation by organizing creator-driven AMAs.</p>
+          </div>
+        </div>
+        <div class="bg-gray-800 p-4 rounded-lg flex gap-4 items-center">
+          <img src="esports.png" alt="Esports" class="w-12 h-12" />
+          <div>
+            <h3 class="text-xl font-semibold text-blue-400">Esports Community Hub</h3>
+            <p>Established partnerships with 30+ creators and drove 300% growth in events.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications">
+      <h2 class="text-4xl font-semibold mb-6">Certifications</h2>
+      <ul class="space-y-4">
+        <li class="bg-gray-800 p-4 rounded">
+          <p class="font-semibold text-blue-300">Community Management</p>
+          <p class="text-gray-400 text-sm">CMX Academy — Jan 2024</p>
+        </li>
+        <li class="bg-gray-800 p-4 rounded">
+          <p class="font-semibold text-blue-300">Social Media Strategy</p>
+          <p class="text-gray-400 text-sm">HubSpot — May 2023</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+      <h2 class="text-4xl font-semibold mb-6">Testimonials</h2>
+      <blockquote class="border-l-4 border-blue-500 pl-4 italic text-gray-300">“An absolute professional—brought clarity, structure, and energy to our community.”</blockquote>
+      <blockquote class="border-l-4 border-purple-500 pl-4 italic text-gray-300 mt-4">“One of the best community builders I’ve worked with.”</blockquote>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2 class="text-4xl font-semibold mb-6">Contact</h2>
+      <form class="space-y-4 max-w-md">
+        <input type="text" placeholder="Your Name" required class="w-full p-3 rounded bg-gray-800 border border-gray-700 text-white" />
+        <input type="email" placeholder="Your Email" required class="w-full p-3 rounded bg-gray-800 border border-gray-700 text-white" />
+        <textarea placeholder="Your Message" rows="4" required class="w-full p-3 rounded bg-gray-800 border border-gray-700 text-white"></textarea>
+        <button type="submit" class="bg-blue-600 hover:bg-blue-700 px-5 py-2 rounded">Send</button>
+      </form>
+      <div class="mt-6">
+        <p>Connect with me on:</p>
+        <div class="flex gap-4 mt-2 text-blue-400 underline">
+          <a href="#">LinkedIn</a>
+          <a href="#">Twitter</a>
+          <a href="#">Discord</a>
+          <a href="resume.pdf">Download Résumé</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center text-sm p-6 border-t border-gray-700 mt-12 text-gray-500">
+    © 2025 Naman Sinha
+  </footer>
+</body>
+</html>
