@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rooter.gg | Server Info</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+    <header class="flex justify-between items-center px-6 py-4 bg-gray-900 shadow-md">
+        <div class="flex items-center space-x-3">
+            <img src="https://media.discordapp.net/attachments/1120955230381690960/1384467880078217256/a_f2e6a905523d299a79884f6cb4a2dfa5.png?ex=685289b0&is=68513830&hm=d72664f7e9a6555afa962ea78877c6fdfa13963f7cdd70d30569c563c5d90eb2&=&format=webp&quality=lossless" alt="Rooter Logo" class="w-10 h-10 rounded-full" />
+        </div>
+        <div>
+            <button id="loginBtn" onclick="login()" class="bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded text-white font-medium">Login with Discord</button>
+            <button id="logoutBtn" onclick="logout()" class="hidden bg-red-600 hover:bg-red-700 px-4 py-2 rounded text-white font-medium">Logout</button>
+        </div>
+    </header>
+
+    <div id="homepage" class="max-w-6xl mx-auto">
+        <div class="relative">
+            <img src="https://cdn.discordapp.com/discovery-splashes/720914167652941846/0d146ca7f254390d4d6adceb02d3ff9b.jpg?size=2048" alt="Rooter Banner" class="w-full h-48 md:h-64 object-cover rounded-t-lg mt-4">
+        </div>
+
+        <main class="bg-gray-800 p-6 md:p-8 rounded-b-lg">
+            <section class="flex flex-col md:flex-row items-center justify-between mb-8">
+                <div class="flex items-start md:items-center space-x-4">
+                    
+                    <img src="https://media.discordapp.net/attachments/1120955230381690960/1384467880078217256/a_f2e6a905523d299a79884f6cb4a2dfa5.png?ex=685289b0&is=68513830&hm=d72664f7e9a6555afa962ea78877c6fdfa13963f7cdd70d30569c563c5d90eb2&=&format=webp&quality=lossless&width=160&height=160" alt="Server Logo" class="w-20 h-20 md:w-24 md:h-24 -mt-12 md:-mt-16">
+                    
+                    <div>
+                        <h1 class="text-2xl md:text-3xl font-bold">Rooter.gg</h1>
+                        <p class="text-gray-400 mt-1">Rooter is India’s Leading Game Streaming Platform. Consider us as Twitch of India, but with focus on the massive mobile.</p>
+                    </div>
+                </div>
+                <div class="mt-4 md:mt-0 flex-shrink-0">
+                    <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-lg font-medium shadow transition w-full md:w-auto">Join Server</button>
+                </div>
+            </section>
+
+            <section class="border-t border-gray-700 pt-6">
+                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="md:col-span-2">
+                        <div class="flex items-center space-x-4 text-sm mb-6">
+                            <span class="flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>317 Online</span>
+                            <span class="flex items-center"><span class="w-2 h-2 bg-gray-500 rounded-full mr-2"></span>130,258 Members</span>
+                        </div>
+                        <div class="space-y-4 text-gray-300">
+                           <p>⭐ Join Our Growing Community of Game Enthusiasts</p>
+                           <p>🎵 Attend Monthly Live Music and Gaming Fusion Events</p>
+                           <p>🎟️ Exclusive Access to Rooter.gg Special Events</p>
+                           <p>🤝 Connect with Fellow Gamers and Make New Friends</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">Categories</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-700 text-xs font-medium px-3 py-1 rounded-full">Esports</span>
+                                <span class="bg-gray-700 text-xs font-medium px-3 py-1 rounded-full">Entertainment</span>
+                                <span class="bg-gray-700 text-xs font-medium px-3 py-1 rounded-full">Mobile</span>
+                                <span class="bg-gray-700 text-xs font-medium px-3 py-1 rounded-full">Gaming</span>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">Social</h3>
+                            <div class="flex space-x-4">
+                               <a href="https://x.com/RooterSports" class="text-gray-400 hover:text-white">X</a>
+                               <a href="https://www.youtube.com/@Rooter" class="text-gray-400 hover:text-white">YouTube</a>
+                               <a href="https://www.instagram.com/rooter.gg/" class="text-gray-400 hover:text-white">Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="border-t border-gray-700 mt-8 pt-6">
+                <h3 class="text-xl font-semibold mb-4">About Rooter.gg</h3>
+                <div class="space-y-4 text-gray-300">
+                    <p>Watching Esports live has become a fad in this generation of gaming, live gaming, and live streaming. But, at some point in their lives, every gamer has considered game streaming.</p>
+                    <p>Rooter is the realization of that dream. It is India's first and biggest gaming and esports streaming app. You can now watch your favorite streamers, interact with them, and at the same time, earn money from watching streams and playing games. Isn't this the best of both worlds?</p>
+                    <p>So who doesn't love live gaming? If you are into gaming, you probably have thought of streaming your game to a platform. Ever wondered how popular streamers can play and stream simultaneously?</p>
+                    <p>The Rooter: Live Gaming & Esports is India's leading and fastest-growing gaming and esports streaming app. Rooter streaming app has 10 million active users and offers some great benefits such as :–</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Watch live streams 🔥</li>
+                        <li>Live streaming your games 🎮</li>
+                        <li>Earn money and win exciting rewards – skins, characters, and many more 🤑</li>
+                    </ul>
+                    <p>If you are into multiplayer games like Free Fire, BGMI(Battlegrounds Mobile India), PUBG (Player's Unknown Battlegrounds), Fortnite, Among Us, Minecraft, Destiny 2, Apex Legends, GTA V (Grand Theft Auto V), Clash Of Clans, Clash Royale, Brawl Stars, Chess, Skribble, FIFA, etc. the Rooter Live Gaming & Esports app is going to make your gaming experience way better!</p>
+                </div>
+            </section>
+        </main>
+
+        <section class="px-6 py-12">
+            <h2 class="text-2xl font-bold text-center mb-8">Latest Articles</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-indigo-500/30 transition-shadow duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Rooter revenue surges 120% to $10 mn in FY25 on strong commerce growth</h3>
+                        <p class="text-gray-400 mb-4">Game content-to-commerce platform Rooter has reported a 120 per cent year-on-year increase in revenue to USD 10 million (Rs 82 crore) in FY25, buoyed by strong performance in its commerce platform Rooter Shop.</p>
+                        <a href="https://www.business-standard.com/companies/news/rooter-revenue-surges-120-to-10-mn-in-fy25-on-strong-commerce-growth-125052800783_1.html" class="font-medium text-indigo-400 hover:text-indigo-300">Read More →</a>
+                    </div>
+                </div>
+                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-indigo-500/30 transition-shadow duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Third time's the charm for this startup looking to ride India's gaming frenzy</h3>
+                        <p class="text-gray-400 mb-4">The India-born game streaming platform's third and sharpest pivot yet helped more than double its annual revenue. But it still has to contend with Twitch and YouTube Gaming.</p>
+                        <a href="https://www.livemint.com/companies/rooter-game-streaming-platform-gaming-commerce-online-gaming-third-pivot-11748410285354.html" class="font-medium text-indigo-400 hover:text-indigo-300">Read More →</a>
+                    </div>
+                </div>
+                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-indigo-500/30 transition-shadow duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">How Rooter became India's biggest game streaming and esports platform</h3>
+                        <p class="text-gray-400 mb-4">From starting off as a sports community engagement startup to pivoting to streaming during the pandemic, Rooter has gone on to become India's largest game streaming platform with an enviable army of loyal users. Here's a deep dive into how they did it</p>
+                        <a href="https://www.forbesindia.com/article/sports-tech-special/how-rooter-became-indias-biggest-game-streaming-and-esports-platform/77211/1" class="font-medium text-indigo-400 hover:text-indigo-300">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section id="dashboard" class="hidden px-6 py-12">
+        <div class="max-w-xl mx-auto bg-gray-800 p-8 rounded-lg shadow-xl">
+            <div class="flex items-center space-x-4 mb-6">
+                <img src="https://via.placeholder.com/80" alt="User Avatar" class="w-20 h-20 rounded-full" />
+                <div>
+                    <h3 class="text-2xl font-bold">Welcome, CoolUser#1234</h3>
+                    <p class="text-gray-400">You are now logged in!</p>
+                </div>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg">
+                <p>This is your personalized dashboard. More widgets and stats will be available here soon.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function login() {
+            document.getElementById('homepage').classList.add('hidden');
+            document.getElementById('dashboard').classList.remove('hidden');
+            document.getElementById('loginBtn').classList.add('hidden');
+            document.getElementById('logoutBtn').classList.remove('hidden');
+        }
+
+        function logout() {
+            document.getElementById('dashboard').classList.add('hidden');
+            document.getElementById('homepage').classList.remove('hidden');
+            document.getElementById('logoutBtn').classList.add('hidden');
+            document.getElementById('loginBtn').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
